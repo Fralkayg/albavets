@@ -26,10 +26,13 @@ export default function About() {
             {siteConfig.vetName} — {siteConfig.vetTitle}
           </p>
           <p className="mt-4 max-w-2xl text-gray-600">
-            Soy médico veterinaria y llevo la consulta directamente a tu hogar en el Valle del
-            Aconcagua. Creo en una atención cercana, tranquila y con mucho cariño, donde tu
-            mascota es la protagonista y tú puedes acompañarla en todo momento, en el lugar
-            donde se siente más segura.
+            Veterinaria a domicilio en el Valle del Aconcagua, enfocada en entregar una atención
+            cercana, tranquila y personalizada. 🐾
+          </p>
+          <p className="mt-4 max-w-2xl text-gray-600">
+            Cuento con un Diplomado en Medicina Interna Veterinaria y actualmente curso un
+            Diplomado en Dermatología Veterinaria, porque seguir aprendiendo también es parte de
+            cuidar mejor. 🤍
           </p>
 
           <div className="mt-6 flex flex-wrap justify-center gap-2 md:justify-start">
