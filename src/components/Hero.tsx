@@ -4,8 +4,8 @@ import WhatsAppIcon from '@mui/icons-material/WhatsApp'
 import LocationOnIcon from '@mui/icons-material/LocationOn'
 import FavoriteIcon from '@mui/icons-material/Favorite'
 import HomeIcon from '@mui/icons-material/Home'
-import PetsIcon from '@mui/icons-material/Pets'
 import { siteConfig, whatsappLink } from '../siteConfig'
+import flyer from '../assets/images/flyer.jpg'
 
 export default function Hero() {
   return (
@@ -67,10 +67,12 @@ export default function Hero() {
           </div>
         </div>
 
-        <div className="relative mx-auto flex h-72 w-72 items-center justify-center sm:h-80 sm:w-80">
-          <div className="absolute inset-0 rounded-[3rem] bg-gradient-to-br from-brand-500 to-brand-700 shadow-xl" />
-          <div className="absolute inset-3 rounded-[2.5rem] border-2 border-dashed border-white/40" />
-          <PetsIcon sx={{ fontSize: 140, color: 'white' }} className="relative drop-shadow-lg" />
+        <div className="relative mx-auto w-full max-w-xs sm:max-w-sm">
+          <img
+            src={flyer}
+            alt="Consultas veterinarias a domicilio: Dra. Daniela Zapata S. junto a una mascota"
+            className="relative w-full rounded-[2rem] shadow-2xl"
+          />
         </div>
       </div>
     </section>

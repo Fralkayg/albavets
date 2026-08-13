@@ -5,25 +5,22 @@ import FavoriteIcon from '@mui/icons-material/Favorite'
 import VerifiedIcon from '@mui/icons-material/Verified'
 import HomeIcon from '@mui/icons-material/Home'
 import { siteConfig } from '../siteConfig'
+import aboutPortrait from '../assets/images/about-portrait.jpg'
 
 export default function About() {
   return (
     <section id="sobre-mi" className="bg-brand-50/60 py-20">
       <div className="mx-auto grid max-w-6xl gap-10 px-4 md:grid-cols-[auto,1fr] md:items-center">
         <Avatar
+          src={aboutPortrait}
+          alt={siteConfig.vetName}
           sx={{
             width: 160,
             height: 160,
-            bgcolor: 'primary.main',
-            fontSize: 56,
-            fontFamily: '"Quicksand", sans-serif',
-            fontWeight: 700,
             mx: 'auto',
             boxShadow: 4,
           }}
-        >
-          DZ
-        </Avatar>
+        />
 
         <div className="text-center md:text-left">
           <h2 className="font-display text-3xl font-bold text-brand-900 sm:text-4xl">

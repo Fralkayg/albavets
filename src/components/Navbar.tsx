@@ -9,14 +9,15 @@ import ListItemButton from '@mui/material/ListItemButton'
 import ListItemText from '@mui/material/ListItemText'
 import MenuIcon from '@mui/icons-material/Menu'
 import WhatsAppIcon from '@mui/icons-material/WhatsApp'
-import PetsIcon from '@mui/icons-material/Pets'
 import { siteConfig, whatsappLink } from '../siteConfig'
+import logoMark from '../assets/images/logo-mark.png'
 
 const navLinks = [
   { label: 'Inicio', href: '#inicio' },
   { label: 'Servicios', href: '#servicios' },
   { label: 'Cómo funciona', href: '#como-funciona' },
   { label: 'Sobre mí', href: '#sobre-mi' },
+  { label: 'Galería', href: '#galeria' },
   { label: 'Contacto', href: '#contacto' },
 ]
 
@@ -36,7 +37,7 @@ export default function Navbar() {
     >
       <Toolbar className="mx-auto w-full max-w-6xl px-4">
         <a href="#inicio" className="flex items-center gap-2 no-underline">
-          <PetsIcon sx={{ color: 'primary.main', fontSize: 30 }} />
+          <img src={logoMark} alt="" className="h-9 w-auto" />
           <span className="font-display text-xl font-bold text-brand-800">
             {siteConfig.name}
           </span>
@@ -76,7 +77,7 @@ export default function Navbar() {
       <Drawer anchor="right" open={open} onClose={() => setOpen(false)}>
         <div className="w-64 pt-4">
           <div className="flex items-center gap-2 px-4 pb-4">
-            <PetsIcon sx={{ color: 'primary.main' }} />
+            <img src={logoMark} alt="" className="h-8 w-auto" />
             <span className="font-display text-lg font-bold text-brand-800">
               {siteConfig.name}
             </span>
