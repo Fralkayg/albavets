@@ -11,9 +11,12 @@ export const siteConfig = {
   whatsappDisplay: '+56 9 7188 2940',
   instagramHandle: '@albavets',
   instagramUrl: 'https://www.instagram.com/albavets/',
+  email: 'consulta@albavets.cl',
   whatsappMessage:
     'Hola AlbaVets, me gustaría agendar una hora para mi mascota 🐾',
 } as const
 
 export const whatsappLink = (message: string = siteConfig.whatsappMessage) =>
   `https://wa.me/${siteConfig.whatsappNumber}?text=${encodeURIComponent(message)}`
+
+export const emailLink = () => `mailto:${siteConfig.email}`

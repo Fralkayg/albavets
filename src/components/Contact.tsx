@@ -1,8 +1,9 @@
 import Button from '@mui/material/Button'
 import WhatsAppIcon from '@mui/icons-material/WhatsApp'
 import InstagramIcon from '@mui/icons-material/Instagram'
+import EmailIcon from '@mui/icons-material/Email'
 import LocationOnIcon from '@mui/icons-material/LocationOn'
-import { siteConfig, whatsappLink } from '../siteConfig'
+import { siteConfig, whatsappLink, emailLink } from '../siteConfig'
 
 export default function Contact() {
   return (
@@ -47,6 +48,19 @@ export default function Contact() {
               }}
             >
               {siteConfig.instagramHandle}
+            </Button>
+            <Button
+              href={emailLink()}
+              variant="outlined"
+              size="large"
+              startIcon={<EmailIcon />}
+              sx={{
+                borderColor: 'white',
+                color: 'white',
+                '&:hover': { borderColor: 'white', bgcolor: 'rgba(255,255,255,0.1)' },
+              }}
+            >
+              {siteConfig.email}
             </Button>
           </div>
 
