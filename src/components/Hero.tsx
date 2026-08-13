@@ -5,7 +5,7 @@ import LocationOnIcon from '@mui/icons-material/LocationOn'
 import FavoriteIcon from '@mui/icons-material/Favorite'
 import HomeIcon from '@mui/icons-material/Home'
 import { siteConfig, whatsappLink } from '../siteConfig'
-import flyer from '../assets/images/flyer.jpg'
+import heroPhoto from '../assets/images/hero-photo.jpg'
 
 export default function Hero() {
   return (
@@ -68,10 +68,14 @@ export default function Hero() {
         </div>
 
         <div className="relative mx-auto w-full max-w-xs sm:max-w-sm">
+          <div
+            aria-hidden
+            className="absolute -inset-3 -z-10 rounded-[2.5rem] bg-gradient-to-br from-brand-400 to-brand-700"
+          />
           <img
-            src={flyer}
-            alt="Consultas veterinarias a domicilio: Dra. Daniela Zapata S. junto a una mascota"
-            className="relative w-full rounded-[2rem] shadow-2xl"
+            src={heroPhoto}
+            alt="Dra. Daniela Zapata S. atendiendo con cariño a una mascota"
+            className="w-full rounded-[2rem] object-cover shadow-2xl"
           />
         </div>
       </div>

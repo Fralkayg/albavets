@@ -36,9 +36,11 @@ export default function Navbar() {
       }}
     >
       <Toolbar className="mx-auto w-full max-w-6xl px-4">
-        <a href="#inicio" className="flex items-center gap-2 no-underline">
-          <img src={logoMark} alt="" className="h-9 w-auto" />
-          <span className="font-display text-xl font-bold text-brand-800">
+        <a href="#inicio" className="flex items-center gap-3 no-underline">
+          <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-white shadow-sm ring-1 ring-brand-100">
+            <img src={logoMark} alt="" className="h-9 w-9 object-contain" />
+          </span>
+          <span className="font-display text-2xl font-bold text-brand-800">
             {siteConfig.name}
           </span>
         </a>
@@ -76,8 +78,10 @@ export default function Navbar() {
 
       <Drawer anchor="right" open={open} onClose={() => setOpen(false)}>
         <div className="w-64 pt-4">
-          <div className="flex items-center gap-2 px-4 pb-4">
-            <img src={logoMark} alt="" className="h-8 w-auto" />
+          <div className="flex items-center gap-3 px-4 pb-4">
+            <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-white shadow-sm ring-1 ring-brand-100">
+              <img src={logoMark} alt="" className="h-8 w-8 object-contain" />
+            </span>
             <span className="font-display text-lg font-bold text-brand-800">
               {siteConfig.name}
             </span>

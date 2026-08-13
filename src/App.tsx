@@ -5,6 +5,7 @@ import HowItWorks from './components/HowItWorks'
 import About from './components/About'
 import Gallery from './components/Gallery'
 import Contact from './components/Contact'
+import FlyerShare from './components/FlyerShare'
 import Footer from './components/Footer'
 import WhatsAppFab from './components/WhatsAppFab'
 
@@ -19,6 +20,7 @@ function App() {
         <About />
         <Gallery />
         <Contact />
+        <FlyerShare />
       </main>
       <Footer />
       <WhatsAppFab />
