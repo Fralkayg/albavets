@@ -4,6 +4,8 @@ import tailwindcss from '@tailwindcss/vite'
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: '/albavets/',
+  // Served from the apex of the custom domain (albavets.cl), not a
+  // GitHub Pages project subpath, so assets resolve from root.
+  base: '/',
   plugins: [react(), tailwindcss()],
 })
